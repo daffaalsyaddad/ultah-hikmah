@@ -1,0 +1,12 @@
+{
+  "name": "hikmah-chapter-20",
+  "version": "1.0.0",
+  "description": "Birthday website for Hikmah Sulianti",
+  "scripts": {
+    "build:css": "npx tailwindcss -i assets/css/input.css -o assets/css/output.css --minify",
+    "watch:css": "npx tailwindcss -i assets/css/input.css -o assets/css/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+}

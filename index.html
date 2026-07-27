@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hikmah — Chapter 20</title>
+  <meta name="description" content="Selamat ulang tahun ke-20, Hikmah Sulianti. Sebuah cerita tentang perempuan istimewa yang memasuki bab baru dalam hidupnya.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/output.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💗</text></svg>">
+</head>
+<body class="bg-background text-foreground font-serif antialiased">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-4 md:px-8 py-3">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-2 nav-link">
+        <span class="font-script text-2xl md:text-3xl text-primary">Hikmah</span>
+        <span class="text-sm bg-primary text-on-primary px-2 py-0.5 rounded-full font-serif font-semibold">pacarku</span>
+      </a>
+      <div class="hidden sm:flex items-center gap-6 text-base">
+        <a href="#hero" class="nav-link text-foreground/60 hover:text-primary transition-colors">Home</a>
+        <a href="#moments" class="nav-link text-foreground/60 hover:text-primary transition-colors">Moments</a>
+        <a href="#message" class="nav-link text-foreground/60 hover:text-primary transition-colors">Message</a>
+        <a href="#prayer" class="nav-link text-foreground/60 hover:text-primary transition-colors">Prayer</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-hero">
+    <div class="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-8 py-20 md:py-0">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+        <div class="flex-1 text-center md:text-left animate-fade-in-up">
+          <p id="hero-badge" class="text-sm md:text-base uppercase tracking-[0.2em] text-primary font-medium mb-4">
+            A Daffa Al Syaddad Original
+          </p>
+          <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-2">
+            <span class="font-script text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-primary">Hikmah</span><br>
+            <span class="font-serif text-gradient-pink text-4xl sm:text-5xl md:text-6xl lg:text-7xl">Chapter 20</span>
+          </h1>
+          <p class="text-base md:text-lg text-accent tracking-wide mb-4">
+            28 July 2026 &middot; Turning 20 &middot; Birthday Special
+          </p>
+          <p class="text-foreground/70 text-base md:text-lg leading-relaxed max-w-lg mx-auto md:mx-0 mb-8">
+            Sebuah cerita tentang Hikmah Sulianti yang sedang mengejar gelar apotekernya, perempuan istimewa yang kini memasuki bab baru dalam hidupnya. Bab tentang tumbuh, bermimpi, mencintai, dan menjadi versi terbaik dari dirinya.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+            <button id="btn-start" class="btn-primary">
+              Mulai Ceritanya
+            </button>
+            <button id="btn-message" class="btn-secondary">
+              Lihat Pesan Daffa
+            </button>
+          </div>
+        </div>
+        <div class="flex-1 flex justify-center md:justify-end animate-fade-in-up" style="animation-delay: 0.3s">
+          <div class="w-80 h-56 md:w-96 md:h-64 rounded-2xl overflow-hidden border-2 border-border shadow-lg shadow-primary/10">
+            <img
+              src="assets/images/sma.JPG"
+              alt="Hikmah Sulianti"
+              class="w-full h-full object-cover hero-img"
+              loading="eager"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN SECTION -->
+  <section class="py-16 md:py-20 px-4 bg-gradient-warm">
+    <div class="max-w-4xl mx-auto text-center">
+      <p id="countdown-label" class="font-script text-3xl md:text-4xl text-primary mb-8">
+        Menuju Chapter 20
+      </p>
+      <div id="countdown" class="grid grid-cols-4 gap-3 md:gap-6 max-w-lg mx-auto">
+        <div class="countdown-box">
+          <span id="days" class="text-4xl md:text-5xl font-bold font-serif text-primary">00</span>
+          <span class="text-sm text-foreground/50 mt-1 uppercase tracking-wider">Hari</span>
+        </div>
+        <div class="countdown-box">
+          <span id="hours" class="text-4xl md:text-5xl font-bold font-serif text-primary">00</span>
+          <span class="text-sm text-foreground/50 mt-1 uppercase tracking-wider">Jam</span>
+        </div>
+        <div class="countdown-box">
+          <span id="minutes" class="text-4xl md:text-5xl font-bold font-serif text-primary">00</span>
+          <span class="text-sm text-foreground/50 mt-1 uppercase tracking-wider">Menit</span>
+        </div>
+        <div class="countdown-box">
+          <span id="seconds" class="text-4xl md:text-5xl font-bold font-serif text-primary">00</span>
+          <span class="text-sm text-foreground/50 mt-1 uppercase tracking-wider">Detik</span>
+        </div>
+      </div>
+      <div id="birthday-message" aria-live="polite">
+        <p class="font-script text-4xl md:text-5xl text-primary mb-2">
+          Happy 20th Birthday, Hikmah! &#x1F497;
+        </p>
+        <p class="text-foreground/70 text-base md:text-lg mb-8">
+          Chapter 20 resmi dimulai.
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center">
+          <button id="btn-thanks" class="px-6 py-3 bg-primary text-on-primary rounded-full font-semibold text-sm hover:bg-primary/90 transition-all duration-300 shadow-lg shadow-primary/30 active:scale-95">
+            Makasih sayangku!! &#x1F497;
+          </button>
+          <button id="btn-react-happy" class="px-5 py-3 bg-white border border-border text-foreground rounded-full text-sm hover:bg-primary/5 hover:border-primary transition-all duration-300 active:scale-95">
+            I'm so happy! &#x1F970;
+          </button>
+          <button id="btn-react-love" class="px-5 py-3 bg-white border border-border text-foreground rounded-full text-sm hover:bg-primary/5 hover:border-primary transition-all duration-300 active:scale-95">
+            Love you! &#x1F48B;
+          </button>
+        </div>
+        <div id="birthday-reaction" class="mt-6 min-h-[60px]"></div>
+      </div>
+
+      <!-- FUN SECTION: Kamu sayang aku??? -->
+      <div class="mt-12 pt-8 border-t border-border">
+        <p class="font-script text-3xl md:text-4xl text-primary mb-6">
+          Kamu sayang aku??? &#x1F970;
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center items-center relative" style="min-height:100px">
+          <button id="btn-yes" class="px-8 py-3 bg-primary text-on-primary rounded-full font-semibold text-base hover:bg-primary/90 transition-all duration-300 shadow-lg shadow-primary/30 active:scale-95">
+            Iya aku sayang kamu!! &#x1F497;
+          </button>
+          <button id="btn-run" class="px-8 py-3 bg-white border-2 border-foreground/20 text-foreground rounded-full font-semibold text-base transition-all duration-150 cursor-pointer select-none" style="position:relative">
+            G
+          </button>
+        </div>
+        <div id="fun-reaction" class="mt-6 min-h-[40px]"></div>
+      </div>
+      <p class="text-sm text-foreground/40 mt-6" aria-hidden="true">
+        28 Juli 2026 &mdash; Hari spesial Hikmah
+      </p>
+    </div>
+  </section>
+
+  <!-- GALLERY ROW 1 -->
+  <section id="moments" class="story-section section-reveal">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-8">
+        <span class="decoration-dot"></span>
+        <span class="decoration-dot mx-2"></span>
+        <span class="decoration-dot"></span>
+      </div>
+      <h2 class="font-script text-4xl md:text-5xl text-primary text-center mb-2">
+        Hikmah&rsquo;s Favorite Moments
+      </h2>
+      <p class="text-foreground/60 text-sm text-center mb-8">
+        Potret dan candid terbaik
+      </p>
+      <div class="gallery-scroll relative">
+        <button class="scroll-left absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/80 border border-border flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300 hidden md:flex shadow-sm" aria-label="Scroll kiri">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <div class="gallery-inner flex gap-4 overflow-x-auto hide-scrollbar py-2 px-1">
+          <div class="photo-card w-48 md:w-56">
+            <img src="assets/images/1.jpeg" alt="Hikmah - Senyum manis" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Senyum yang selalu buat hari lebih cerah</span></div>
+          </div>
+          <div class="photo-card w-48 md:w-56">
+            <img src="assets/images/2.jpeg" alt="Hikmah - Momen spesial" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Salah satu momen terbaik bersamamu</span></div>
+          </div>
+          <div class="photo-card w-48 md:w-56">
+            <img src="assets/images/3.jpeg" alt="Hikmah - Kenangan indah" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Kenangan yang selalu aku simpan</span></div>
+          </div>
+          <div class="photo-card w-48 md:w-56">
+            <img src="assets/images/4.jpeg" alt="Hikmah - Hari biasa jadi spesial" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Bersamamu, hari biasa jadi spesial</span></div>
+          </div>
+          <div class="photo-card w-48 md:w-56">
+            <img src="assets/images/5.jpeg" alt="Hikmah - Orang favorit" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Orang favoritku sepanjang masa</span></div>
+          </div>
+          <div class="photo-card w-48 md:w-56">
+            <img src="assets/images/6.jpeg" alt="Hikmah - Bab baru bersama" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Bersiap untuk bab baru bersama</span></div>
+          </div>
+        </div>
+        <button class="scroll-right absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/80 border border-border flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300 hidden md:flex shadow-sm" aria-label="Scroll kanan">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY ROW 2 -->
+  <section class="story-section section-reveal bg-gradient-warm">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-8">
+        <span class="decoration-dot"></span>
+        <span class="decoration-dot mx-2"></span>
+        <span class="decoration-dot"></span>
+      </div>
+      <h2 class="font-script text-4xl md:text-5xl text-primary text-center mb-2">
+        A Story Through Pictures
+      </h2>
+      <p class="text-foreground/60 text-sm text-center mb-8">
+        Momen bersama, perjalanan, dan kisah sederhana
+      </p>
+      <div class="gallery-scroll relative">
+        <button class="scroll-left absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/80 border border-border flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300 hidden md:flex shadow-sm" aria-label="Scroll kiri">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <div class="gallery-inner flex gap-4 overflow-x-auto hide-scrollbar py-2 px-1">
+          <div class="photo-card w-48 md:w-56">
+            <img src="assets/images/7.jpeg" alt="Hikmah dan Daffa - Foto bersama" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Together is my favorite place</span></div>
+          </div>
+          <div class="photo-card w-48 md:w-56">
+            <img src="assets/images/8.jpeg" alt="Hikmah - Momen spesial" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Every moment with you is special</span></div>
+          </div>
+          <div class="photo-card w-48 md:w-56">
+            <img src="assets/images/9.jpeg" alt="Hikmah - Cerita kita" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Cerita kita yang paling indah</span></div>
+          </div>
+          <div class="photo-card w-48 md:w-56">
+            <img src="assets/images/10.jpeg" alt="Hikmah - Petualangan" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Setiap langkah adalah petualangan</span></div>
+          </div>
+          <div class="photo-card w-48 md:w-56">
+            <img src="assets/images/11.jpeg" alt="Hikmah - Bahagia" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Kebahagiaan sederhana yang nyata</span></div>
+          </div>
+          <div class="photo-card w-48 md:w-56">
+            <img src="assets/images/12.jpeg" alt="Hikmah - Bab baru" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Memasuki chapter baru bersama</span></div>
+          </div>
+          <div class="photo-card !aspect-[4/3] w-64 md:w-72">
+            <img src="assets/images/sma.JPG" alt="Hikmah - Momen SMA" class="w-full h-full object-cover" loading="lazy">
+            <div class="caption"><span class="text-xs font-serif">Cerita sejak SMA yang tak terlupakan</span></div>
+          </div>
+        </div>
+        <button class="scroll-right absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/80 border border-border flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all duration-300 hidden md:flex shadow-sm" aria-label="Scroll kanan">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIRTHDAY MESSAGE -->
+  <section id="message" class="story-section section-reveal">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-8">
+        <span class="decoration-dot"></span>
+        <span class="decoration-dot mx-2"></span>
+        <span class="decoration-dot"></span>
+      </div>
+      <div class="bg-white/60 border border-border rounded-2xl p-6 md:p-10 shadow-lg shadow-primary/5">
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <div class="w-full md:w-5/12 flex-shrink-0">
+            <div class="w-full aspect-[3/4] rounded-xl overflow-hidden border border-border">
+              <img
+                src="assets/images/utama.jpeg"
+                alt="Hikmah Sulianti"
+                class="w-full h-full object-cover hero-img"
+                loading="lazy"
+              >
+            </div>
+          </div>
+          <div class="flex-1">
+            <h2 class="font-script text-2xl md:text-3xl text-primary mb-6">
+              A Message for My Favorite Person
+            </h2>
+            <div class="space-y-4 text-sm md:text-base text-foreground/70 leading-relaxed">
+              <p>
+                mat ulang tahun sayangku cantikku, semoga apa yang disemogakan tersemogakan sayangku. lancar sampai dapat gelar apotekernya sayang cantikku, sehat sehat terus yaah sayang, maafin aku terkadang suka bikin kamu kesel, tapi itu karena aku sayang sama kamu sayangku (anjay).
+              </p>
+              <p>
+                apalagi ya, pokoknya kamu terbaik , ter the best best, aku cinta kamu selamanya, sehidup semati, kamu cantik cantik. hatihati kalo kerja ya sayangku. aku harap kamu dapat kerja yang lebih layak tempatnya sayang.
+              </p>
+              <p>
+                semoga diumur 20 tahun ini, kamu menjadi pribadi yang lebih baik, lebih dewasa, lebih sabar, lebih bijaksana, lebih cantik, lebih sehat, lebih bahagia, dan lebih sukses. semoga kita bisa terus bersama sampai tua nanti sayangkuuuuu.
+              </p>
+              <p>
+                dah itu ajadeh pokoknya. agak lain sih ngucapinnya, semoga kamu suka pake cara ini yah hahaha, semoga kamu gailfeel dehh
+              </p>
+              <p class="text-foreground font-medium">
+                Selamat memasuki umur 20, sayang.
+              </p>
+              <p class="text-right font-script text-lg text-primary mt-6">
+                Dari Daffa Al Syaddad, pacar kamu.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRAYER AND WISHES -->
+  <section id="prayer" class="story-section section-reveal bg-gradient-warm">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="text-center mb-6">
+        <span class="decoration-dot"></span>
+        <span class="decoration-dot mx-2"></span>
+        <span class="decoration-dot"></span>
+      </div>
+      <h2 class="font-script text-3xl md:text-4xl text-primary mb-8">
+        My Prayer for You
+      </h2>
+      <div class="bg-white/60 border border-border rounded-2xl p-6 md:p-10 mb-10 text-left shadow-sm">
+        <p class="text-sm md:text-base text-foreground/70 leading-relaxed">
+          Ya Allah, jagalah Hikmah dalam setiap langkahnya. Panjangkan umurnya dalam kebaikan, sehatkan tubuh dan hatinya, mudahkan setiap urusannya, serta berkahi ilmu, rezeki, keluarga, dan masa depannya.
+        </p>
+        <p class="text-sm md:text-base text-foreground/70 leading-relaxed mt-4">
+          Jauhkan Hikmah dari kesedihan yang terlalu berat, dari orang-orang yang berniat buruk, dan dari jalan yang tidak baik. Berikan ia kekuatan ketika menghadapi kesulitan, ketenangan ketika merasa lelah, serta keberanian untuk meraih semua cita-citanya.
+        </p>
+        <p class="text-sm md:text-base text-foreground/70 leading-relaxed mt-4">
+          Semoga hubungan kami selalu dipenuhi kejujuran, kesabaran, rasa saling menghargai, kasih sayang, dan arah yang baik. Semoga kami dapat bertumbuh menjadi pribadi yang lebih baik dan saling mendukung dalam setiap proses.
+        </p>
+        <p class="text-right font-script text-lg text-primary mt-4">
+          Aamiin.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+        <div class="bg-white border border-border rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+          <p class="font-script text-2xl text-primary mb-2">Happiness</p>
+          <p class="text-xs md:text-sm text-foreground/60">Semoga hari-harimu selalu dipenuhi alasan untuk tersenyum.</p>
+        </div>
+        <div class="bg-white border border-border rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+          <p class="font-script text-2xl text-primary mb-2">Health</p>
+          <p class="text-xs md:text-sm text-foreground/60">Semoga kamu selalu diberikan kesehatan dan kekuatan.</p>
+        </div>
+        <div class="bg-white border border-border rounded-xl p-6 text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+          <p class="font-script text-2xl text-primary mb-2">Dreams</p>
+          <p class="text-xs md:text-sm text-foreground/60">Semoga satu per satu impianmu menemukan jalannya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING SECTION -->
+  <section class="py-20 md:py-32 px-4 text-center section-reveal relative overflow-hidden bg-gradient-hero">
+    <div class="relative z-10 max-w-2xl mx-auto">
+      <span class="decoration-dot"></span>
+      <span class="decoration-dot mx-2"></span>
+      <span class="decoration-dot"></span>
+      <h2 class="font-script text-3xl md:text-4xl text-primary mt-6 mb-6">
+        The Best Is Yet to Come
+      </h2>
+      <p class="text-sm md:text-base text-foreground/70 leading-relaxed mb-8 max-w-lg mx-auto">
+        Ini bukan akhir cerita. Ini adalah awal dari Chapter 20&mdash;bab baru yang semoga dipenuhi lebih banyak kebahagiaan, keberanian, pencapaian, dan cinta.
+      </p>
+      <button id="btn-back" class="btn-gold animate-pulse-soft">
+        Kembali ke Awal
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 px-4 text-center border-t border-border bg-white/40">
+    <p class="text-xs md:text-sm text-foreground/40">
+      Made with love <span class="text-primary animate-heart-beat inline-block" aria-hidden="true">&hearts;</span> by Daffa Al Syaddad for Hikmah Sulianti.
+    </p>
+    <p class="text-xs text-foreground/30 mt-1">
+      28 July 2026 &middot; Chapter 20
+    </p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
