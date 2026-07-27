@@ -317,7 +317,62 @@
     });
   }
 
+  function initSiteLock() {
+    var lock = document.getElementById('site-lock');
+    var main = document.getElementById('main-content');
+    if (!lock || !main) return;
+
+    var lockDays = document.getElementById('lock-days');
+    var lockHours = document.getElementById('lock-hours');
+    var lockMinutes = document.getElementById('lock-minutes');
+    var lockSeconds = document.getElementById('lock-seconds');
+    var lockInterval = null;
+
+    function updateLockCountdown() {
+      var now = getNow();
+      var diff = BIRTHDAY.getTime() - now.getTime();
+
+      if (diff <= 0) {
+        unlockSite();
+        return;
+      }
+
+      var totalSeconds = Math.floor(diff / 1000);
+      lockDays.textContent = String(Math.floor(totalSeconds / 86400)).padStart(2, '0');
+      lockHours.textContent = String(Math.floor((totalSeconds % 86400) / 3600)).padStart(2, '0');
+      lockMinutes.textContent = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+      lockSeconds.textContent = String(totalSeconds % 60).padStart(2, '0');
+    }
+
+    function unlockSite() {
+      if (lockInterval) {
+        clearInterval(lockInterval);
+        lockInterval = null;
+      }
+      lock.style.opacity = '0';
+      setTimeout(function () {
+        lock.style.display = 'none';
+        main.style.opacity = '1';
+      }, 1000);
+    }
+
+    if (isBirthdayReached()) {
+      unlockSite();
+    } else {
+      lock.style.display = 'flex';
+      updateLockCountdown();
+      lockInterval = setInterval(function () {
+        if (isBirthdayReached()) {
+          unlockSite();
+        } else {
+          updateLockCountdown();
+        }
+      }, 1000);
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
+    initSiteLock();
     initCountdown();
     initScrollReveal();
     initGalleryScroll();
